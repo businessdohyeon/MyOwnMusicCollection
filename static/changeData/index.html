@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE DATA</title>
+    <link rel="stylesheet" href="../../resource/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div id="home">
+        <a href="../home/index.html">
+            <img src="../../resource/icons/home-white.png">
+        </a>
+    </div>
+    <form>
+        <div id="button-wrapper">
+            <button id="cancel" type="button">Cancel</button>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        <div id="background-image">
+            <div>
+                <label>background image url : </label>
+                <input name="background-image-url" type="url" placeholder="Not Required">
+            </div>
+        </div>
+        <header>
+            <section>
+                <div class="cd">
+                    <div class="hole"></div>
+                    <div id="song-image-url">
+                        <label>Song image url</label>
+                        <input name="song-image-url" type="url" placeholder="Not Required">
+                    </div>
+                </div>
+            </section>
+            <section id="header-info">
+                <div id="title-wrapper">
+                    <div id="title">
+                        <label>title : </label>
+                        <input name="title" type="text" required placeholder="Required">
+                    </div>
+                </div>
+                <div id="others">
+                    <div>
+                        <div id="singer">
+                            <label>singer : </label>
+                            <input name="singer" type="text" required placeholder="Required">
+                        </div>
+                        <div id="lang-instrument">
+                            <label>lang/instrument : </label>
+                            <input name="lang-instrument" type="text" required placeholder="Required">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <fieldset id="rate">
+                <legend>Rate</legend>
+                <div id="input-wrapper">
+                    <div class="rate-block">
+                        <img src="../../resource/icons/musicnote-empty.png">
+                        <div class="rate-block-half"></div>
+                        <div class="rate-block-half"></div>
+                    </div>
+                    <div class="rate-block">
+                        <img src="../../resource/icons/musicnote-empty.png">
+                        <div class="rate-block-half"></div>
+                        <div class="rate-block-half"></div>
+                    </div>
+                    <div class="rate-block">
+                        <img src="../../resource/icons/musicnote-empty.png">
+                        <div class="rate-block-half"></div>
+                        <div class="rate-block-half"></div>
+                    </div>
+                    <div class="rate-block">
+                        <img src="../../resource/icons/musicnote-empty.png">
+                        <div class="rate-block-half"></div>
+                        <div class="rate-block-half"></div>
+                    </div>
+                    <div class="rate-block">
+                        <img src="../../resource/icons/musicnote-empty.png">
+                        <div class="rate-block-half"></div>
+                        <div class="rate-block-half"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="platform">
+                <legend>platform (URL)</legend>
+                <div class="platform-item">
+                    <picture>
+                        <img src="../../resource/icons/youtube.png" alt="">
+                    </picture>
+                    <div>
+                        <label for="youtube">Youtube</label>
+                        <input id="youtube" name="youtube" type="url" placeholder="Not Required">
+                    </div>
+                </div>
+                <div class="platform-item">
+                    <picture>
+                        <img src="../../resource/icons/youtubeMusic.png" alt="">
+                    </picture>
+                    <div>
+                        <label for="youtubeMusic">YoutubeMusic</label>
+                        <input id="youtubeMusic" name="youtubeMusic" type="url" placeholder="Not Required">
+                    </div>
+                </div>
+                <div class="platform-item">
+                    <picture>
+                        <img src="../../resource/icons/spotify.png" alt="">
+                    </picture>
+                    <div>
+                        <label for="spotify">Spotify</label>
+                        <input id="spotify" name="spotify" type="url" placeholder="Not Required">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="etc">
+                <legend>etc (Key : Value)</legend>
+                <div id="etc-button-wrapper">
+                    <button id="etc-button" type="button">+</button>
+                </div>
+                <div class="etc-item">
+                    <input type="text" placeholder="Not Required">
+                    <input type="text" placeholder="Not Required">
+                </div>
+            </fieldset>
+        </main>
+    </form>
+</body>
+</html>

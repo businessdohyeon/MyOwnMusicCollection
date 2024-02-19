@@ -1,0 +1,217 @@
+#home {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    left: 1%;
+}
+#home:hover {
+    opacity: 0.5;
+}
+#home img{
+    width: 100%;
+}
+
+
+
+/* ________________________________________________ */
+#background-image{
+    height: 50vh;
+    background-color: rgb(58, 58, 58);
+    background-size: cover;
+}
+
+
+
+/* ________________________________________________ */
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-left: 10vw;
+    margin-top: -7.5vw;
+}
+
+
+.cd{
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(237, 238, 255);
+    background-size: cover;
+}
+.cd::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.hole{
+    width: 40%;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+}
+.hole::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+#header-info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 2vw;
+}
+#title-wrapper{
+    position: relative;
+}
+#title{
+    font-size: 500%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#others{
+    display: grid;
+    grid-template-columns: 39fr 1fr 1fr;
+    padding-right: 0.3vw;
+}
+#others a{
+    text-decoration: none;
+}
+#others a:hover{
+    opacity: 0.5;
+}
+#singer {
+    font-size: 200%;
+    color: black;
+}
+#lang-instrument{
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 1%;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background-color: gray;
+    color: aliceblue;
+}
+#edit, #delete{
+    padding-top: 7px;
+}
+#edit a img{
+    width: 80%;
+}
+#delete button{
+    border: none;
+    background: none;
+    padding: 0;
+}
+#delete button:hover{
+    opacity: 0.5;
+}
+#delete img{
+    width: 80%;
+}
+
+
+/* ________________________________________________ */
+main{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    border-top: 2px solid whitesmoke;
+    padding: 4vh 0;
+}
+
+
+#left{
+    width: 40%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10% 5%;
+}
+#left a{
+    display: block;
+    width: 70%;
+    margin: 10% auto;
+}
+#left a:hover{
+    opacity: 0.8;
+}
+#left a img{
+    width: 100%;
+}
+
+
+#middle{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 3% 5%;
+}
+#input-wrapper{
+    width: 80%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 3%;
+    border-bottom: 3px solid black;
+}
+#input-wrapper:hover{
+    opacity: 0.8;
+}
+.rate-block{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.rate-block-half{
+    z-index: 2;
+}
+#input-wrapper img{
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 1;
+}
+#rate-info{
+    margin-top: 2%;
+    font-size: 150%;
+    display: inline-block;
+    background-color: gray;
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+
+
+
+#right{
+    width: 90%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: 3px solid rgb(158, 158, 255);
+    border-radius: 15px;
+    padding: 3% 1%;
+    text-align: center;
+}
+#right a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(111, 111, 255);
+    color: aliceblue;
+    padding: 3px 15px;
+    border-radius: 25px;
+    margin: 5px 5px;
+}
+#right a:hover{
+    opacity: 0.8;
+}

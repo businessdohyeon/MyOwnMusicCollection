@@ -1,0 +1,296 @@
+#home {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    left: 1%;
+}
+#home:hover {
+    opacity: 0.5;
+}
+#home img{
+    width: 100%;
+}
+
+
+
+/* ________________________________________________ */
+#button-wrapper{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#button-wrapper button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: white;
+    font-size: 100%;
+}
+#button-wrapper button:hover{
+    opacity: 0.8;
+}
+#cancel {
+    background-color: rgb(161, 161, 161);
+}
+#submit {
+    background-color: rgb(84, 195, 114);
+}
+
+
+
+
+
+/* ________________________________________________ */
+#background-image{
+    height: 50vh;
+    background-color: rgb(58, 58, 58);
+}
+#background-image div{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    box-sizing: border-box;
+    width: 70vw;
+    height: 10vh;
+    border: 3px dashed white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+#background-image div label{
+    font-size: 150%;
+    margin: auto auto;
+    color: white;
+}
+#background-image div input{
+    font-size: 150%;
+    width: 95%;
+    margin: auto 0;
+    color: rgb(58, 58, 58);
+}
+
+
+
+/* ________________________________________________ */
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-left: 10vw;
+    margin-top: -7.5vw;
+}
+
+
+.cd{
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(176, 176, 176);
+    position: relative;
+}
+.cd::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.hole{
+    width: 40%;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+}
+.hole::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+#song-image-url{
+    position: absolute;
+    top: 30%;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+}
+#song-image-url input{
+    width: 100%;
+    font-size: 100%;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+
+#header-info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 2vw;
+}
+#title-wrapper{
+    position: relative;
+}
+#title{
+    font-size: 500%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+}
+#title input{
+    font-size: 70%;
+    background: none;
+    border: 2px dashed white;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 5px;
+}
+#singer, #lang-instrument{
+    display: inline-block;
+}
+#singer {
+    font-size: 200%;
+    color: black;
+}
+#singer input{
+    font-size: 60%;
+    border: 2px dashed black;
+    border-radius: 5px;
+}
+#lang-instrument{
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 1%;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background-color: gray;
+    color: aliceblue;
+}
+#lang-instrument input{
+    border: 1px solid black;
+    background-color: rgb(231, 231, 231);
+}
+
+
+
+/* ________________________________________________ */
+main{
+    margin-top: 3vh;
+    border-top: 2px solid whitesmoke;
+    padding: 4vh 0;
+}
+fieldset {
+    width: 80%;
+    margin: 3vh auto;
+    border-radius: 15px;
+}
+legend {
+    padding: 4px 10px;
+    margin-left: 1%;
+}
+
+
+
+#rate{
+    background-color: lemonchiffon;
+}
+#rate legend{
+    background-color: rgb(255, 235, 50);
+}
+#input-wrapper{
+    width: 80%;
+    height: 24vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1% auto 0;
+}
+#input-wrapper:hover{
+    opacity: 0.8;
+}
+.rate-block{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.rate-block-half{
+    z-index: 2;
+}
+#input-wrapper img{
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 1;
+}
+
+
+
+#platform{
+    background-color: aliceblue;   
+}
+#platform legend{
+    background-color: rgb(17, 128, 226);
+    color: aliceblue;
+}
+.platform-item{
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    margin: 2% 3%;
+    border-bottom: 2px solid rgb(220, 236, 250);
+}
+.platform-item img{
+    width: 100%;
+}
+.platform-item div{
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    justify-content: center;
+}
+.platform-item div label{
+    font-size: 200%;
+    margin: auto 0;
+}
+.platform-item div input{
+    font-size: 130%;
+    margin: auto 0;
+    padding-left: 3%;
+}
+
+
+
+
+#etc{
+    background-color: rgb(255, 231, 202);
+}
+#etc legend{
+    background-color: rgb(255, 166, 56);
+}
+#etc-button-wrapper{
+    text-align: right;
+    padding-right: 1%;
+}
+#etc-button{
+    border: none;
+    background-color: orange;
+    color: white;
+}
+#etc-button:hover{
+    opacity: 0.5;
+}
+.etc-item{
+    margin: 2% 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.etc-item input{
+    font-size: 150%;
+    width: 96%;
+    margin: 0 auto;
+}

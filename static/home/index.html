@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="../../resource/reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div id="home">
+        <a href="./index.html">
+            <img src="../../resource/icons/home.png">
+        </a>
+    </div>
+    <div id="stastics"></div>
+    <header>
+        <section id="searchBox">
+            <form>
+                <input id="searchContent" name="searchContent" type="search" placeholder="Song | Singer | lang/instrument | for etc : key=value">
+                <button type="submit">
+                    <img src="../../resource/icons/search.png">
+                </button>
+            </form>
+        </section>
+        <section id="searchQuick"></section>
+    </header>
+    <main>
+        <ul>
+            <template id="list-item">
+                <li>
+                    <section>
+                        <a>
+                            <div class="cd">
+                                <div class="hole"></div>
+                            </div>
+                        </a>
+                    </section>
+                    <section class="info">
+                        <div><span class="singer"></span><span class="lang-instrument"></span></div>
+                        <div><span class="title"></span></div>
+                        <div><span class="rate"></span></div>
+                    </section>
+                </li>
+            </template>
+        </ul>
+    </main>
+    <div id="add">
+        <a href="../changeData/index.html">
+            <img src="../../resource/icons/add.png">
+        </a>
+    </div>
+</body>
+</html>

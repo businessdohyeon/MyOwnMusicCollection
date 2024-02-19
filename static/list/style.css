@@ -1,0 +1,136 @@
+#home {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    left: 1%;
+}
+#home:hover {
+    opacity: 0.5;
+}
+#home img{
+    width: 100%;
+}
+
+
+
+/* ________________________________________________ */
+header{
+    background-color: rgb(255, 120, 120);
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+#searchBox{
+    width: 95%;
+    height: 7vh;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+#searchBox form{
+    width: 95%;
+    height: 7vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+}
+#searchContent{
+    border: none;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 200%;
+}
+#searchContent:focus{
+    outline: none;
+}
+#searchBox button{
+    border: none;
+    background: none;
+}
+#searchBox button:hover{
+    opacity: 0.5;
+}
+#searchBox button img{
+    width: 100%;
+}
+
+
+
+
+/* ________________________________________________ */
+main{
+    width: 85%;
+    margin: 10vh auto 10vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+main ul{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main ul li{
+    margin: 8% 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+main ul li a:hover{
+    opacity: 0.7;
+}
+
+
+.cd{
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+.cd::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.hole{
+    width: 40%;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.hole::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+.info{
+    padding-left: 10%;
+}
+.info div{
+    margin: 4% 0;
+}
+.singer{
+    font-size: 100%;
+}
+.lang-instrument{
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-size: 80%;
+}
+.title{
+    font-size: 150%;
+}
+.rate{
+    font-size: 150%;
+}
